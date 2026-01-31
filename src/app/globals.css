@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-deep: #1a2f1a;
+  --text-cream: #f5f0e6;
+  --glass-bg: rgba(26, 47, 26, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.12);
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-cream);
+}
