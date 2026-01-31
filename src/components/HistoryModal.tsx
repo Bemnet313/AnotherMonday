@@ -50,9 +50,9 @@ export default function HistoryModal({ monday, onClose }: HistoryModalProps) {
         <p className="text-gray-700 mb-6">{monday.summary}</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-          {/* Bemnet's Section */}
+          {/* Bemnet&apos;s Section */}
           <div className="flex flex-col items-center p-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl">
-            <h3 className="text-xl font-semibold mb-4">Bemnet's Tasks</h3>
+            <h3 className="text-xl font-semibold mb-4">Bemnet&apos;s Tasks</h3>
             <div className="mb-6">
               <AvatarViewer skinUrl={BEMNET_SKIN_URL} width={80} height={120} />
             </div>
@@ -65,9 +65,9 @@ export default function HistoryModal({ monday, onClose }: HistoryModalProps) {
             </ul>
           </div>
 
-          {/* Nati's Section */}
+          {/* Nati&apos;s Section */}
           <div className="flex flex-col items-center p-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl">
-            <h3 className="text-xl font-semibold mb-4">Nati's Tasks</h3>
+            <h3 className="text-xl font-semibold mb-4">Nati&apos;s Tasks</h3>
             <div className="mb-6">
               <AvatarViewer skinUrl={NATI_SKIN_URL} width={70} height={100} />
             </div>
