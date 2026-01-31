@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import AvatarViewer from "@/components/AvatarViewer";
 import { springTransition } from "@/constants";
-import { BEMNET_SKIN_URL, NATI_SKIN_URL } from "@/app/page"; // Import skin URLs from page.tsx
+import { BEMNET_SKIN_URL, NATI_SKIN_URL } from "@/constants"; // Import skin URLs from constants.ts
 
 interface PastMonday {
   id: string;
