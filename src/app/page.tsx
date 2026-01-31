@@ -94,13 +94,15 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      {/* Section 1 (Hero) */}
-      <section className="min-h-screen flex flex-col items-center justify-center bg-[var(--bg-deep)] text-cream px-4 py-6 sm:py-8">
+      {/* Section 1 (Hero) - with glowy green radial gradient overlay */}
+      <section className="min-h-screen flex flex-col items-center justify-center bg-[var(--bg-deep)] text-cream px-4 py-6 sm:py-8 relative overflow-hidden">
+        {/* Glowy green radial gradient */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(52,211,153,0.25),rgba(34,197,94,0.15),transparent)] pointer-events-none" aria-hidden />
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={springTransition}
-          className="text-5xl sm:text-7xl font-extralight text-center mb-4 tracking-tight"
+          className="text-5xl sm:text-7xl font-extralight text-center mb-4 tracking-tight relative z-10 drop-shadow-[0_0_30px_rgba(52,211,153,0.2)]"
         >
           Another <span className="font-normal text-cream/90">MON</span>day!
         </motion.h1>
@@ -108,16 +110,16 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...springTransition, delay: 0.2 }}
-          className="text-xl sm:text-2xl text-blue-300/80 mb-12"
+          className="text-xl sm:text-2xl text-emerald-200/90 mb-12 relative z-10 drop-shadow-[0_0_20px_rgba(52,211,153,0.4)]"
         >
-          A shared space for Bemnet & Nati.
+          Instead of the white board try this app to write and track tasks
         </motion.p>
 
         {!user && (
           <motion.button
             type="button"
             onClick={handleLogin}
-            className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-cream/20 backdrop-blur-md border border-white/20 text-cream font-medium text-lg hover:bg-cream/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cream/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-deep)] transition-colors"
+            className="relative z-10 flex items-center gap-2 px-8 py-4 rounded-2xl bg-cream/20 backdrop-blur-md border border-white/20 text-cream font-medium text-lg hover:bg-cream/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cream/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--bg-deep)] transition-colors"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             transition={springTransition}
