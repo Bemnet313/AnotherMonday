@@ -4,7 +4,7 @@ import { useState, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import PersonPanel from "@/components/PersonPanel";
 import ActionButtons from "@/components/ActionButtons";
-import { auth, googleProvider } from "../../firebase";
+import { auth, googleProvider } from "@/lib/firebase";
 import { signInWithPopup, signOut, onAuthStateChanged, User } from "firebase/auth";
 import { LogIn, LogOut } from "lucide-react";
 import { springTransition, BEMNET_SKIN_URL, NATI_SKIN_URL } from "../constants";
